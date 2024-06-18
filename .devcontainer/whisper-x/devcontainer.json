@@ -1,7 +1,7 @@
 {
   // https://hub.docker.com/r/thomasvvugt/whisperx
   "name": "WhisperX Dev Container",
-  "image": "thomasvvugt/whisperx:cpu",
+  "image": "thomasvvugt/whisperx:cuda118",
   "workspaceFolder": "/workspaces/vocal-score-converter/",
   "customizations": {
     "vscode": {
@@ -25,8 +25,8 @@
         }
       }
     }
-  }
-  // "runArgs": ["recording.mp3", "--batch_size", "4", "--compute_type", "int8"]
+  },
+  "runArgs": ["--gpus", "all"]
   // "features": {}
   // "postCreateCommand": "poetry install"
 }
