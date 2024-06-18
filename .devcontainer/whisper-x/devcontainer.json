@@ -1,0 +1,32 @@
+{
+  // https://hub.docker.com/r/thomasvvugt/whisperx
+  "name": "WhisperX Dev Container",
+  "image": "thomasvvugt/whisperx:cpu",
+  "workspaceFolder": "/workspaces/vocal-score-converter/",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "ms-python.mypy-type-checker",
+        "KevinRose.vsc-python-indent",
+        "njpwerner.autodocstring",
+        "VisualStudioExptTeam.vscodeintellicode"
+      ],
+      "settings": {
+        "[python]": {
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+          },
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "mypy-type-checker.args": []
+        }
+      }
+    }
+  }
+  // "runArgs": ["recording.mp3", "--batch_size", "4", "--compute_type", "int8"]
+  // "features": {}
+  // "postCreateCommand": "poetry install"
+}
