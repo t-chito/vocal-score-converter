@@ -1,0 +1,31 @@
+{
+  // https://montreal-forced-aligner.readthedocs.io/en/latest/installation.html#docker-installation
+  "name": "MFA Dev Container",
+  "image": "mmcauliffe/montreal-forced-aligner:latest",
+  "workspaceFolder": "/workspaces/vocal-score-converter/",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "ms-python.mypy-type-checker",
+        "KevinRose.vsc-python-indent",
+        "njpwerner.autodocstring",
+        "VisualStudioExptTeam.vscodeintellicode"
+      ],
+      "settings": {
+        "[python]": {
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+          },
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "mypy-type-checker.args": []
+        }
+      }
+    }
+  }
+  // "features": {}
+  // "postCreateCommand": "poetry install"
+}
