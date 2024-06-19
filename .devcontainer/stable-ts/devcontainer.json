@@ -1,0 +1,43 @@
+{
+  "name": "stable-ts Dev Container",
+  // https://hub.docker.com/_/python
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
+  // "image": "python:3.11.9-bullseye",
+  "features": {
+    // https://github.com/devcontainers-contrib/features/pkgs/container/features%2Fffmpeg-apt-get
+    "ghcr.io/devcontainers-contrib/features/ffmpeg-apt-get:1.0.15": {},
+    // https://github.com/raucha/devcontainer-features/pkgs/container/devcontainer-features%2Fpytorch
+    "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+      "installCudnn": true,
+      "cudaVersion": "11.8",
+      "cudnnVersion": "8.6.0.163"
+    },
+    "ghcr.io/raucha/devcontainer-features/pytorch:latest": {}
+  },
+  "runArgs": ["--gpus", "all", "--shm-size", "16gb"],
+  "postCreateCommand": "pip install -U stable-ts",
+  "workspaceFolder": "/workspaces/vocal-score-converter/",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "ms-python.mypy-type-checker",
+        "KevinRose.vsc-python-indent",
+        "njpwerner.autodocstring",
+        "VisualStudioExptTeam.vscodeintellicode"
+      ],
+      "settings": {
+        "[python]": {
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+          },
+          "editor.defaultFormatter": "charliermarsh.ruff",
+          "mypy-type-checker.args": []
+        }
+      }
+    }
+  }
+}
