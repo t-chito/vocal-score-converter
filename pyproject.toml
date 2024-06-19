@@ -7,6 +7,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+pronouncing = "^0.2.0" # 使うのやめた。
+setuptools = "^70.0.0" # エラー回避のため (pronouncing 使ってないからいらない？)
+pyphen = "^0.15.0"
 
 
 [build-system]
