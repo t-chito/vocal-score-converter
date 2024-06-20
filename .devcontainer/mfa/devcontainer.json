@@ -2,6 +2,10 @@
   // https://montreal-forced-aligner.readthedocs.io/en/latest/installation.html#docker-installation
   "name": "MFA Dev Container",
   "image": "mmcauliffe/montreal-forced-aligner:latest",
+  "features": {
+    // https://github.com/itsmechlark/features
+    "ghcr.io/itsmechlark/features/postgresql:1": {}
+  },
   "workspaceFolder": "/workspaces/vocal-score-converter/",
   "customizations": {
     "vscode": {
@@ -26,6 +30,5 @@
       }
     }
   }
-  // "features": {}
   // "postCreateCommand": "poetry install"
 }
