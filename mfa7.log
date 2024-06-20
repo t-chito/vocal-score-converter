@@ -1,0 +1,350 @@
+----- Download models -----
+Local version of model already exists (/mfa/pretrained_models/acoustic/english_us_arpa.zip). Use the --ignore_cache flag to force redownloading.
+Local version of model already exists (/mfa/pretrained_models/dictionary/english_us_arpa.dict). Use the --ignore_cache flag to force redownloading.
+----- validate files -----
+ INFO     Setting up corpus information...                                                                                    
+ INFO     Loading corpus from source files...                                                                                 
+   1% ╸                                                                                  1/100  [ 0:00:01 < -:--:-- , ? it/s ]
+ INFO     Found 1 speaker across 1 file, average number of utterances per speaker: 1.0                                        
+ INFO     Initializing multiprocessing jobs...                                                                                
+ INFO     Normalizing text...                                                                                                 
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Generating MFCCs...                                                                                                 
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Calculating CMVN...                                                                                                 
+ INFO     Generating final features...                                                                                        
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Creating corpus split...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Corpus                                                                                                              
+ INFO     1 sound files                                                                                                       
+ INFO     1 text files                                                                                                        
+ INFO     1 speakers                                                                                                          
+ INFO     1 utterances                                                                                                        
+ INFO     267.162 seconds total duration                                                                                      
+ INFO     Sound file read errors                                                                                              
+ INFO     There were no issues reading sound files.                                                                           
+ INFO     Feature generation                                                                                                  
+ INFO     There were no utterances missing features.                                                                          
+ INFO     Files without transcriptions                                                                                        
+ INFO     There were no sound files missing transcriptions.                                                                   
+ INFO     Transcriptions without sound files                                                                                  
+ INFO     There were no transcription files missing sound files.                                                              
+ INFO     Dictionary                                                                                                          
+ INFO     Out of vocabulary words                                                                                             
+ WARNING  9 OOV word types                                                                                                    
+ WARNING  12total OOV tokens                                                                                                  
+ WARNING  For a full list of the word types, please see: songs/Recreant/4mfa/temp/4mfa/oovs_found.txt. For a by-utterance     
+          breakdown of missing words, see: songs/Recreant/4mfa/temp/4mfa/utterance_oovs.txt                                   
+ INFO     Training                                                                                                            
+ INFO     Initializing training for monophone...                                                                              
+ INFO     Compiling training graphs...                                                                                        
+ INFO     Generating initial alignments...                                                                                    
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Initialization complete!                                                                                            
+ INFO     monophone - Iteration 1 of 40                                                                                       
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:15 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 2 of 40                                                                                       
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:05 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 3 of 40                                                                                       
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:04 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 4 of 40                                                                                       
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:04 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 5 of 40                                                                                       
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:04 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 6 of 40                                                                                       
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:04 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 7 of 40                                                                                       
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:04 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 8 of 40                                                                                       
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:04 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 9 of 40                                                                                       
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:04 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 10 of 40                                                                                      
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:03 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 11 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 12 of 40                                                                                      
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:03 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 13 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 14 of 40                                                                                      
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:03 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 15 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 16 of 40                                                                                      
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:03 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 17 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 18 of 40                                                                                      
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:03 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 19 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 20 of 40                                                                                      
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:03 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 21 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 22 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 23 of 40                                                                                      
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:03 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 24 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 25 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 26 of 40                                                                                      
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:03 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 27 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 28 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 29 of 40                                                                                      
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:03 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 30 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 31 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 32 of 40                                                                                      
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:02 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 33 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 34 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 35 of 40                                                                                      
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:02 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 36 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 37 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 38 of 40                                                                                      
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:02 < 0:00:00 , ? it/s ]
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 39 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     monophone - Iteration 40 of 40                                                                                      
+ INFO     Accumulating statistics...                                                                                          
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2/1  [ 0:00:01 < 0:00:00 , ? it/s ]
+ INFO     Training complete!                                                                                                  
+ INFO     Compiling training graphs...                                                                                        
+ ERROR    There was an error in the run, please see the log.                                                                  
+Exception ignored in atexit callback: <bound method ExitHooks.history_save_handler of <montreal_forced_aligner.command_line.mfa.ExitHooks object at 0x7f8c1df7e750>>
+Traceback (most recent call last):
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/command_line/mfa.py", line 106, in history_save_handler
+    raise self.exception
+  File "/env/bin/mfa", line 8, in <module>
+    sys.exit(mfa_cli())
+             ^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/rich_click/rich_command.py", line 367, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/rich_click/rich_command.py", line 152, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/click/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/click/decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/command_line/validate.py", line 137, in validate_corpus_cli
+    validator.validate()
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/validation/corpus_validator.py", line 512, in validate
+    self.train()
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/acoustic_modeling/trainer.py", line 619, in train
+    self.align()
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/acoustic_modeling/trainer.py", line 764, in align
+    self.compile_train_graphs()
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/alignment/mixins.py", line 241, in compile_train_graphs
+    for _ in run_kaldi_function(CompileTrainGraphsFunction, arguments):
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/utils.py", line 732, in run_kaldi_function
+    raise v
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/utils.py", line 537, in run
+    self.function.run()
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/abc.py", line 108, in run
+    raise MultiprocessingError(self.job_name, error_text)
+montreal_forced_aligner.exceptions.MultiprocessingError: MultiprocessingError:
+
+Job 1 encountered an error:
+Traceback (most recent call last):
+
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/abc.py", line 104, in run
+    self._run()
+
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/alignment/multiprocessing.py", line 423, in _run
+    compiler = TrainingGraphCompiler(
+               ^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/env/lib/python3.11/site-packages/kalpy/decoder/training_graphs.py", line 76, in __init__
+    ReadKaldiObject(str(model_path), self.transition_model)
+
+RuntimeError: kaldi::KaldiFatalError
+./scripts/mfa.sh: line 14: e: command not found
+----- align -----
+ INFO     Setting up corpus information...                                                                                    
+ INFO     Found 1 speaker across 1 file, average number of utterances per speaker: 1.0                                        
+ INFO     Initializing multiprocessing jobs...                                                                                
+ INFO     Text already normalized.                                                                                            
+ INFO     Features already generated.                                                                                         
+ INFO     Compiling training graphs...                                                                                        
+ INFO     Performing first-pass alignment...                                                                                  
+ INFO     Generating alignments...                                                                                            
+ 100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1/1  [ 0:00:17 < 0:00:00 , ? it/s ]
+ WARNING  Alignment analysis not available without using postgresql                                                           
+ INFO     Exporting alignment TextGrids to songs/Recreant/4mfa...                                                             
+ INFO     Collecting phone and word alignments from alignment lattices...                                                     
+   0%                                                                                      0/1  [ 0:00:02 < -:--:-- , ? it/s ]
+ ERROR    There was an error in the run, please see the log.                                                                  
+Exception ignored in atexit callback: <bound method ExitHooks.history_save_handler of <montreal_forced_aligner.command_line.mfa.ExitHooks object at 0x7f8d4027dd50>>
+Traceback (most recent call last):
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/command_line/mfa.py", line 106, in history_save_handler
+    raise self.exception
+  File "/env/bin/mfa", line 8, in <module>
+    sys.exit(mfa_cli())
+             ^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/rich_click/rich_command.py", line 367, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/rich_click/rich_command.py", line 152, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/click/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/click/decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/command_line/align.py", line 131, in align_corpus_cli
+    aligner.export_files(
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/alignment/base.py", line 1344, in export_files
+    self.export_textgrids(output_format, include_original_text)
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/alignment/base.py", line 1181, in export_textgrids
+    self.collect_alignments()
+  File "/env/lib/python3.11/site-packages/montreal_forced_aligner/alignment/base.py", line 1014, in collect_alignments
+    session.execute(
+  File "/env/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2245, in _execute_internal
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "/env/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/env/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/env/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/env/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/env/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: word_interval_temp
+[SQL: INSERT INTO word_interval SELECT * from word_interval_temp]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
