@@ -15,10 +15,13 @@
     "njpwerner",
     "Outro",
     "pyphen",
+    "pysrt",
     "raucha",
     "textgrid",
     "thomasvvugt",
     "vscodeintellicode",
-    "whisperx"
+    "whisperx",
+    "xmax",
+    "xmin"
   ]
 }
