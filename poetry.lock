@@ -74,6 +74,17 @@ files = [
 cmudict = ">=0.4.0"
 
 [[package]]
+name = "pydub"
+version = "0.25.1"
+description = "Manipulate audio with an simple and easy high level interface"
+optional = true
+python-versions = "*"
+files = [
+    {file = "pydub-0.25.1-py2.py3-none-any.whl", hash = "sha256:65617e33033874b59d87db603aa1ed450633288aefead953b30bded59cb599a6"},
+    {file = "pydub-0.25.1.tar.gz", hash = "sha256:980a33ce9949cab2a569606b65674d748ecbca4f0796887fd6f46173a7b0d30f"},
+]
+
+[[package]]
 name = "pyphen"
 version = "0.15.0"
 description = "Pure Python module to hyphenate text"
@@ -143,8 +154,9 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 
 [extras]
 mfa = ["pysrt", "textgrid"]
+sts = ["pydub"]
 
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "cbd99b4f499ad46c0b4a1f80bdadda66b18435362769f026b40b6de1398f1481"
+content-hash = "eafb498074047aa54ab9bf4ee48552e55e9d09876d2d6368a639bbef8229ad7c"
