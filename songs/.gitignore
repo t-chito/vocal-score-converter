@@ -1,9 +1,0 @@
-# このディレクトリ以下はすべて ignore する
-/**
-
-# 例外リスト
-## .gitignore
-!.gitignore
-## 任意のディレクトリの .gitkeep
-!/**/
-!/**/.gitkeep
