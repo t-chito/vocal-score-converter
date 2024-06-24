@@ -17,6 +17,7 @@
   "runArgs": ["--gpus", "all", "--shm-size", "16gb"],
   "postCreateCommand": "pip install -U stable-ts",
   "workspaceFolder": "/workspaces/vocal-score-converter/",
+  "remoteUser": "root",
   "customizations": {
     "vscode": {
       "extensions": [

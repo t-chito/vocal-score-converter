@@ -6,6 +6,9 @@ import whisperx.types  # type: ignore
 # https://github.com/m-bain/whisperX/issues/398
 # score は使い道なさそうなのでこのまま無視
 
+# TODO: 時間表記のフォーマットを srt に合わせる
+# いまだと 19.04 --> 26.241 のようになっているが、
+# 00:00:19,040 --> 00:00:26,241 の表記が正しい
 
 def write2rst(
     results: whisperx.types.AlignedTranscriptionResult,
